@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravisankar /// Credential Vault</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/Certifications.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+</head>
+<body>
+    <div id="vanta-bg"></div>
+    <div class="grid-overlay"></div>
+    
+    <div class="mobile-nav-overlay" id="mobile-overlay">
+        <div class="overlay-content">
+            <a href="../index.html" class="mobile-link">00 /// HOME</a>
+            <a href="Projects.html" class="mobile-link">01 /// PROJECTS</a>
+            <a href="Experience.html" class="mobile-link">02 /// EXPERIENCE</a>
+            <a href="Certifications.html" class="mobile-link highlight">03 /// CERTS</a>
+            <a href="My_resume.html" class="mobile-link">04 /// RESUME</a>
+        </div>
+    </div>
+
+    <div class="site-wrapper">
+        <header class="navbar">
+            <div class="nav-brand"><a href="../index.html">RC_SYSTEMS</a></div>
+            <nav class="nav-links desktop-only">
+                <a href="../index.html" class="nav-item">./Home</a>
+                <a href="Projects.html" class="nav-item">./Projects</a>
+                <a href="Experience.html" class="nav-item">./Exp_Log</a>
+                <a href="Certifications.html" class="nav-item active">./Certs</a>
+                <a href="My_resume.html" class="nav-item">./RESUME</a>
+            </nav>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+            </div>
+        </header>
+
+        <header class="page-header">
+            <h1 class="glitch-text" data-text="CREDENTIAL_VAULT">CREDENTIAL_VAULT</h1>
+            <p class="subtitle">Cryptographic proof of neural architecture competence.</p>
+        </header>
+
+        <main class="vault-container">
+            <div class="carousel-stage">
+                <div class="carousel">
+                    
+                    <div class="holo-plate" style="--i:0;" onclick="openInspector('ai')">
+                        <div class="plate-inner">
+                            <div class="plate-header">
+                                <span class="provider">SIMPLILEARN</span>
+                                <span class="status-badge"><i class="fas fa-check-circle"></i> VERIFIED</span>
+                            </div>
+                            <div class="plate-body">
+                                <i class="fas fa-brain plate-icon"></i>
+                                <h3>Artificial Intelligence Engineer</h3>
+                                <div class="scan-line"></div>
+                            </div>
+                            <div class="plate-footer">
+                                <div class="meta-row"><span>ID: AI-8492</span><span>2023</span></div>
+                                <div class="skill-tags"><span>NLP</span><span>Vision</span><span>RL</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="holo-plate" style="--i:1;" onclick="openInspector('ml')">
+                        <div class="plate-inner">
+                            <div class="plate-header">
+                                <span class="provider">SIMPLILEARN</span>
+                                <span class="status-badge"><i class="fas fa-check-circle"></i> VERIFIED</span>
+                            </div>
+                            <div class="plate-body">
+                                <i class="fas fa-robot plate-icon"></i>
+                                <h3>Machine Learning Specialist</h3>
+                                <div class="scan-line"></div>
+                            </div>
+                            <div class="plate-footer">
+                                <div class="meta-row"><span>ID: ML-3321</span><span>2023</span></div>
+                                <div class="skill-tags"><span>Supervised</span><span>Unsupervised</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="holo-plate" style="--i:2;" onclick="openInspector('tf')">
+                        <div class="plate-inner">
+                            <div class="plate-header">
+                                <span class="provider">IBM</span>
+                                <span class="status-badge"><i class="fas fa-check-circle"></i> VERIFIED</span>
+                            </div>
+                            <div class="plate-body">
+                                <i class="fas fa-network-wired plate-icon"></i>
+                                <h3>Deep Learning w/ TensorFlow</h3>
+                                <div class="scan-line"></div>
+                            </div>
+                            <div class="plate-footer">
+                                <div class="meta-row"><span>ID: IBM-DL-99</span><span>2024</span></div>
+                                <div class="skill-tags"><span>Keras</span><span>CNNs</span><span>Tensors</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="holo-plate" style="--i:3;" onclick="openInspector('ds')">
+                        <div class="plate-inner">
+                            <div class="plate-header">
+                                <span class="provider">SIMPLILEARN</span>
+                                <span class="status-badge"><i class="fas fa-check-circle"></i> VERIFIED</span>
+                            </div>
+                            <div class="plate-body">
+                                <i class="fas fa-chart-network plate-icon"></i>
+                                <h3>Data Science with Python</h3>
+                                <div class="scan-line"></div>
+                            </div>
+                            <div class="plate-footer">
+                                <div class="meta-row"><span>ID: DS-PY-77</span><span>2022</span></div>
+                                <div class="skill-tags"><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="holo-plate" style="--i:4;" onclick="openInspector('cp')">
+                        <div class="plate-inner">
+                            <div class="plate-header">
+                                <span class="provider">CIPHER SCHOOLS</span>
+                                <span class="status-badge"><i class="fas fa-check-circle"></i> VERIFIED</span>
+                            </div>
+                            <div class="plate-body">
+                                <i class="fas fa-code plate-icon"></i>
+                                <h3>Competitive Programming</h3>
+                                <div class="scan-line"></div>
+                            </div>
+                            <div class="plate-footer">
+                                <div class="meta-row"><span>ID: CP-ALG-01</span><span>2022</span></div>
+                                <div class="skill-tags"><span>DSA</span><span>Logic</span><span>C++</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p class="instruction">
+                <i class="fas fa-hand-pointer"></i> DRAG TO ROTATE VAULT /// CLICK TO DECRYPT
+            </p>
+        </main>
+        
+        <footer class="page-footer">
+            <p>SYSTEM_ID: RC_2025 /// <a href="../index.html">RETURN_ROOT</a></p>
+        </footer>
+    </div>
+    
+    <div class="inspector-overlay" id="inspector-overlay">
+        <div class="inspector-hud">
+            
+            <div class="hud-header">
+                <div class="hud-title">
+                    <i class="fas fa-shield-alt"></i> 
+                    <span id="hud-doc-title">LOADING_DOCUMENT...</span>
+                </div>
+                <div class="hud-controls">
+                    <a id="hud-external-link" href="#" target="_blank" class="hud-btn" title="Open in New Tab">
+                        <i class="fas fa-external-link-alt"></i> OPEN_EXT
+                    </a>
+                    <button class="hud-btn close-btn" onclick="closeInspector()">
+                        <i class="fas fa-times"></i> EJECT
+                    </button>
+                </div>
+            </div>
+
+            <div class="hud-viewport">
+                <div class="hud-scan-line"></div>
+                <div class="hud-grid-bg"></div>
+                <iframe id="hud-frame" src="" class="hud-iframe"></iframe>
+            </div>
+
+            <div class="hud-footer">
+                <div class="status-item"><span class="blink">●</span> LIVE_CONNECTION</div>
+                <div class="status-item">ENCRYPTION: AES-256</div>
+                <div class="status-item">VERIFIED_HASH: #9F2A...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- 1. VANTA BACKGROUND ---
+        try {
+            VANTA.GLOBE({
+                el: "#vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x38bdf8,
+                backgroundColor: 0x050505
+            });
+        } catch(e) { console.log(e); }
+
+        // --- 2. 3D Carousel Logic ---
+        const carousel = document.querySelector('.carousel');
+        let isMouseDown = false;
+        let startX;
+        let currentRotation = 0;
+        let dragStartRotation = 0;
+
+        document.querySelector('.vault-container').addEventListener('mousedown', (e) => {
+            isMouseDown = true;
+            startX = e.pageX;
+            dragStartRotation = currentRotation;
+            carousel.style.cursor = 'grabbing';
+            carousel.style.transition = 'none'; 
+        });
+
+        document.addEventListener('mouseup', () => {
+            isMouseDown = false;
+            carousel.style.cursor = 'grab';
+            carousel.style.transition = 'transform 0.5s ease-out'; 
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isMouseDown) return;
+            e.preventDefault();
+            const x = e.pageX;
+            const walk = (x - startX) * 0.3; 
+            currentRotation = dragStartRotation - walk;
+            carousel.style.transform = `rotateY(${currentRotation}deg)`;
+        });
+
+        // --- 3. THE INSPECTOR LOGIC ---
+        const overlay = document.getElementById('inspector-overlay');
+        const iframe = document.getElementById('hud-frame');
+        const title = document.getElementById('hud-doc-title');
+        const extLink = document.getElementById('hud-external-link');
+
+        // Data map for certificates
+        const certData = {
+            'ai': { title: 'AI_ENGINEER_CERT.PDF', url: '../PDFS/AI_Engineer.pdf' },
+            'ml': { title: 'MACHINE_LEARNING_SPEC.PDF', url: '../PDFS/Machine_Learning.pdf' },
+            'tf': { title: 'TENSORFLOW_DEEP_LEARNING.PDF', url: '../PDFS/Deep_Learning_TensorFlow.pdf' },
+            'ds': { title: 'DATA_SCIENCE_PYTHON.PDF', url: '../PDFS/Data_Science_with_Python.pdf' },
+            'cp': { title: 'COMPETITIVE_PROG_ALGO.PDF', url: '../PDFS/DSA.pdf' }
+        };
+
+        function openInspector(key) {
+            const data = certData[key];
+            if(!data) return;
+
+            // Set Title & External Link
+            title.textContent = data.title;
+            extLink.href = data.url;
+
+            // Set Iframe Source with "FitH" to force horizontal fit
+            iframe.src = `${data.url}#view=FitH`;
+
+            // Show Overlay
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeInspector() {
+            overlay.classList.remove('active');
+            iframe.src = ""; // Clear source to stop processing
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close on clicking outside the HUD box
+        overlay.addEventListener('click', (e) => {
+            if(e.target === overlay) closeInspector();
+        });
+
+        // --- 4. Mobile Menu ---
+        function toggleMenu() {
+            const nav = document.getElementById('mobile-overlay');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

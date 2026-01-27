@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravisankar /// Experience Log</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/experience.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="particle-canvas"></div>
+    <div class="scanlines"></div>
+    
+    <div class="mobile-nav-overlay" id="mobile-overlay">
+        <div class="overlay-content">
+            <a href="../index.html" class="mobile-link">00 /// HOME</a>
+            <a href="Projects.html" class="mobile-link">01 /// PROJECTS</a>
+            <a href="Experience.html" class="mobile-link highlight">02 /// EXPERIENCE</a>
+            <a href="Certifications.html" class="mobile-link">03 /// CERTS</a>
+            <a href="My_resume.html" class="mobile-link">04 /// RESUME</a>
+        </div>
+    </div>
+
+    <div class="site-wrapper">
+        <header class="navbar">
+            <div class="nav-brand"><a href="../index.html">RC_SYSTEMS</a></div>
+            <nav class="nav-links desktop-only">
+                <a href="../index.html" class="nav-item">./Home</a>
+                <a href="Projects.html" class="nav-item">./Projects</a>
+                <a href="Experience.html" class="nav-item active">./Exp_Log</a>
+                <a href="Certifications.html" class="nav-item">./Cert</a>
+                <a href="My_resume.html" class="nav-item">./RESUME</a>
+            </nav>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+            </div>
+        </header>
+
+        <header class="page-header">
+            <div class="glitch-wrapper">
+                <h1 class="glitch-text" data-text="CAREER_PIPELINE">CAREER_PIPELINE</h1>
+            </div>
+            <p class="terminal-subtitle">
+                <span class="prompt">></span> EXECUTE_HISTORY_TRACE <span class="cursor">_</span>
+            </p>
+        </header>
+
+        <main class="timeline-container">
+            <div class="timeline-rail">
+                <div class="rail-pulse"></div>
+            </div>
+
+            <div class="timeline-node" data-year="2025">
+                <div class="node-marker"></div>
+                <div class="node-content glass-panel">
+                    <div class="node-header">
+                        <div class="role-badge">
+                            <i class="fas fa-university"></i> ACADEMIC
+                        </div>
+                        <h2>Student Teaching Assistant</h2>
+                        <h3>Mercy University <span class="location">/// NY, USA</span></h3>
+                        <span class="timestamp">Feb 2025 – Dec 2025</span>
+                    </div>
+                    
+                    <div class="node-body">
+                        <div class="log-section">
+                            <h5><i class="fas fa-terminal"></i> RESPONSIBILITY_LOG:</h5>
+                            <ul>
+                                <li>Assist students in mastering core Python, Java, and Data Structures concepts across both Spring and Fall semesters, including OOP, data structures, and algorithms.</li>
+                                <li>Provide one-on-one debugging support during Spring (Python/Java) and Fall (Data Structures) courses, helping students resolve coding issues and strengthen logical problem-solving skills.</li>
+                                <li>Support the Data Structures course (Fall 2025) by clarifying complex topics, guiding students through assignments, and facilitating understanding of algorithms.</li>
+                                <li>Grade programming assignments in both semesters and provide detailed feedback to help students improve code efficiency, readability, and accuracy.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-row">
+                            <div class="tech-chip">Python</div>
+                            <div class="tech-chip">Java</div>
+                            <div class="tech-chip">Data Structures</div>
+                            <div class="tech-chip">Algorithms</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-node" data-year="2023">
+                <div class="node-marker"></div>
+                <div class="node-content glass-panel">
+                    <div class="node-header">
+                        <div class="role-badge highlight-blue">
+                            <i class="fas fa-code-branch"></i> FULL_TIME
+                        </div>
+                        <h2>Programmer Analyst</h2>
+                        <h3>Cognizant Technology Solutions <span class="location">/// Bengaluru, India</span></h3>
+                        <span class="timestamp">June 2022 – Nov 2023</span>
+                    </div>
+                    
+                    <div class="node-body">
+                        <div class="log-section">
+                            <h5><i class="fas fa-terminal"></i> RESPONSIBILITY_LOG:</h5>
+                            <ul>
+                                <li>Designed and deployed end-to-end machine learning pipelines including data ingestion, preprocessing, feature engineering, model training, and deployment into production.</li>
+                                <li>Developed predictive models (classification, regression, and time series forecasting) using scikit-learn, XGBoost, and TensorFlow, achieving up to 20-30% improvement in prediction accuracy.</li>
+                                <li>Automated ETL workflows for large-scale datasets, enabling real-time model retraining and reducing manual intervention by 40%.</li>
+                                <li>Conducted hyperparameter tuning, cross-validation, and feature selection to optimize models for scalability and performance.</li>
+                                <li>Deployed ML models via Flask/Flask API and containerized solutions using Docker, improving deployment reliability and scalability.</li>
+                                <li>Collaborated with cross-functional teams to integrate ML-driven insights into business dashboards, accelerating data-driven decision-making.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="metric-row">
+                            <div class="metric-box">
+                                <span class="val">30%</span>
+                                <span class="lbl">Accuracy Gain</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="val">40%</span>
+                                <span class="lbl">Manual Reduction</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-row">
+                            <div class="tech-chip">Docker</div>
+                            <div class="tech-chip">Flask API</div>
+                            <div class="tech-chip">XGBoost</div>
+                            <div class="tech-chip">TensorFlow</div>
+                            <div class="tech-chip">ETL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-node" data-year="2022">
+                <div class="node-marker"></div>
+                <div class="node-content glass-panel">
+                    <div class="node-header">
+                        <div class="role-badge highlight-purple">
+                            <i class="fas fa-graduation-cap"></i> INTERNSHIP
+                        </div>
+                        <h2>ML Intern</h2>
+                        <h3>Cognizant Technology Solutions <span class="location">/// Remote</span></h3>
+                        <span class="timestamp">Jan 2022 – June 2022</span>
+                    </div>
+                    
+                    <div class="node-body">
+                        <div class="log-section">
+                            <h5><i class="fas fa-terminal"></i> RESPONSIBILITY_LOG:</h5>
+                            <ul>
+                                <li>Implemented proof-of-concept ML models for structured and unstructured data to demonstrate predictive analytics capabilities.</li>
+                                <li>Applied feature engineering techniques (missing value imputation, categorical encoding, scaling, text preprocessing) to improve model accuracy.</li>
+                                <li>Built exploratory EDA reports with Matplotlib, Seaborn, and Pandas to identify data patterns and driven feature selection.</li>
+                                <li>Assisted in developing sentiment analysis and recommendation system prototypes using NLP and collaborative techniques.</li>
+                                <li>Gained hands-on experience with Supervised learning algorithms and their evaluation metrics.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-row">
+                            <div class="tech-chip">EDA</div>
+                            <div class="tech-chip">Pandas</div>
+                            <div class="tech-chip">Matplotlib</div>
+                            <div class="tech-chip">Scikit-learn</div>
+                            <div class="tech-chip">NLP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+        <footer class="page-footer">
+            <p>SYSTEM_ID: RC_2025 /// <a href="../index.html">RETURN_ROOT</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // --- 1. Dynamic Particle Network (Three.js) ---
+        const container = document.getElementById('particle-canvas');
+        let scene, camera, renderer, particles;
+
+        function initParticles() {
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 50;
+
+            renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            container.appendChild(renderer.domElement);
+
+            // Particles
+            const geometry = new THREE.BufferGeometry();
+            const count = 150;
+            const posArray = new Float32Array(count * 3);
+
+            for(let i = 0; i < count * 3; i++) {
+                posArray[i] = (Math.random() - 0.5) * 100;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+            const material = new THREE.PointsMaterial({
+                size: 0.5,
+                color: 0x38bdf8,
+                transparent: true,
+                opacity: 0.8
+            });
+
+            particles = new THREE.Points(geometry, material);
+            scene.add(particles);
+            
+            animate();
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            particles.rotation.y += 0.001;
+            particles.rotation.x += 0.0005;
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        initParticles();
+
+        // --- 2. Timeline Interaction ---
+        const nodes = document.querySelectorAll('.timeline-node');
+        
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        nodes.forEach(node => {
+            observer.observe(node);
+            
+            // Toggle expansion on click
+            node.addEventListener('click', () => {
+                node.classList.toggle('expanded');
+            });
+        });
+
+        // --- 3. Mobile Menu ---
+        function toggleMenu() {
+            const overlay = document.getElementById('mobile-overlay');
+            const btn = document.querySelector('.mobile-menu-btn');
+            overlay.classList.toggle('active');
+            btn.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
