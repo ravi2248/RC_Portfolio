@@ -24,7 +24,6 @@
             <a href="../index.html" class="mobile-link">00_ROOT</a>
             <a href="Projects.html" class="mobile-link">01_MODULES</a>
             <a href="Experience.html" class="mobile-link">02_LOGS</a>
-            <a href="Certifications.html" class="mobile-link">03_CREDENTIALS</a>
             <a href="My_resume.html" class="mobile-link highlight">04_KERNEL</a>
         </div>
     </div>
@@ -36,7 +35,6 @@
                 <a href="../index.html">~/home</a>
                 <a href="Projects.html">~/projects</a>
                 <a href="Experience.html">~/experience</a>
-                <a href="Certifications.html">~/certificates</a>
                 <a href="My_resume.html" class="active">~/resume</a>
             </div>
             <div class="nav-actions">
@@ -195,7 +193,6 @@
     </div>
 
     <script>
-        // --- 1. VANTA BACKGROUND ---
         try {
             VANTA.NET({
                 el: "#vanta-bg",
@@ -206,7 +203,7 @@
                 minWidth: 200.00,
                 scale: 1.00,
                 scaleMobile: 1.00,
-                color: 0x00f3ff,       /* Neon Cyan */
+                color: 0x00f3ff,     
                 backgroundColor: 0x020205,
                 points: 12.00,
                 maxDistance: 22.00,
@@ -214,7 +211,6 @@
             });
         } catch(e) { console.log(e); }
 
-        // --- 2. Mobile Menu ---
         function toggleMenu() {
             const overlay = document.getElementById('mobile-overlay');
             overlay.classList.toggle('active');
@@ -223,3 +219,4 @@
 </body>
 
 </html>
+
